@@ -3,6 +3,7 @@
 let admin;
 let name = "Nastya";
 admin = name;
+console.log(admin);
 
 
 //Task 2
