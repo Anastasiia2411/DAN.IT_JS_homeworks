@@ -1,16 +1,22 @@
 "use strict"
 
-function createNewUser(userName, userSurname) {
+function createNewUser() {
+    let userName;
+    let userSurname;
+    do{
+        userName =   prompt("Укажите Ваше имя");
+        userSurname = prompt("Укажите Вашу фамилию");
+    } while (userName === "" || userSurname === "" || !isNaN(Number(userName))  || !isNaN(Number(userSurname)));
     let newUser = {
-        _firstName: userName,
-        _lastName: userSurname,
+        firstName: userName,
+        lastName: userSurname,
         getLogin(){
-           return `${this._firstName.charAt(0).toLowerCase()}${this._lastName.toLowerCase()}`
+           return `${this.firstName.charAt(0).toLowerCase()}${this.lastName.toLowerCase()}`
         },
     }
-    newUser.getLogin();
     return newUser;
 }
 
-createNewUser(prompt("Укажите Ваше имя"),prompt("Укажите Вашу фамилию"));
-
+let obj = createNewUser();
+obj.getLogin();
+console.log(obj.getLogin());
