@@ -14,8 +14,8 @@ console.log(idElem);
 let parentIdElem = idElem.parentNode;
 console.log(parentIdElem);
 // Знайти дочірні ноди, якщо вони є, і вивести в консоль назви та тип нод.
-let childrenNodes = idElem.children;
-console.log(childrenNodes);
+let childNodes = idElem.childNodes;
+console.log(childNodes);
 
 
 //Встановіть в якості контента елемента з класом testParagraph наступний параграф -This is a paragraph
