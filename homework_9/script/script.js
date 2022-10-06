@@ -1,12 +1,12 @@
 "use strict"
 
-function createList(arr, domEl = document.body){
-    function mapToEl(arr){
+function createList(arr, domEl = document.body) {
+    function mapToEl(arr) {
         let container = document.createElement("ul");
-        container.append(...arr.map((el)=>{
-            if(Array.isArray(el)){
+        container.append(...arr.map((el) => {
+            if (Array.isArray(el)) {
                 return mapToEl(el);
-            }else{
+            } else {
                 let li = document.createElement("li");
                 li.textContent = el;
                 return li
@@ -14,16 +14,13 @@ function createList(arr, domEl = document.body){
         }))
         return container
     }
+
     let func = mapToEl(arr);
     domEl.append(func);
 }
 
 
-
-
 createList(["hello", "world", "Kiev", [1, 3, [1, 2, [1, 2]]], "Kharkiv", "Odessa", "Lviv"]);
-
-
 
 
 let div = document.createElement("div");
@@ -33,10 +30,10 @@ document.body.append(div);
 
 function minus() {
     let a = Number(div.textContent) - 1;
-  return  div.textContent = a;
+    return div.textContent = a;
 }
-let timerID = setInterval(minus, 1000);
 
+let timerID = setInterval(minus, 1000);
 
 setTimeout(() => {
     clearInterval(timerID);
