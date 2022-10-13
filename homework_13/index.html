@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Banners</title>
+    <style>
+        .image-to-show {
+            width: 400px;
+            height: 400px;
+        }
+
+        .images-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        .image-to-show{
+            display: block;
+        }
+        .img_hight{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div class="images-wrapper">
+    <img src="./image/1.jpg" alt="image of game" class="image-to-show" />
+    <img src="./image/2.jpg" alt="image of game" class="image-to-show img_hight" />
+    <img src="./image/3.JPG" alt="image of game" class="image-to-show img_hight" />
+    <img src="./image/4.png" alt="image of game" class="image-to-show img_hight" />
+</div>
+<div class="images-wrapper">
+<button class="stop">Припинити</button>
+<button class="start">Відновити показ</button>
+</div>
+<script src="./script.js"></script>
+</body>
+</html>
+
