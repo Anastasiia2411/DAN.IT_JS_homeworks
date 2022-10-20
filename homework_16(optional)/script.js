@@ -14,12 +14,11 @@ function FibonNumb(F0, F1, nb) {
     }
 }
 
-let a = FibonNumb(1, 2, 4);
+let a = FibonNumb(1, 2, +prompt("Your number"));
 console.log("a", a);
-let b = FibonNumb(2, 3, 7);
-console.log("b", b);
-let c = FibonNumb(2, 3, 6);
-console.log("c", c);
+
+
+
 
 
 
