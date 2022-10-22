@@ -3,10 +3,7 @@ let container = document.querySelector(".container")
 btn.addEventListener("click",circle)
 function circle() {
     let radius = +prompt("your radius");
-    if(radius > 10){
-        alert("the number should not be more than 10")
-        circle()
-    }else if(isNaN(radius)){
+    if(isNaN(radius)){
         alert("you need to enter a number")
         circle()
     }
