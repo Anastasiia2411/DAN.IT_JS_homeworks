@@ -1,3 +1,12 @@
+//Обробник події — це фрагмент програми, який буде виконуватися одразу після настання цієї події.
+//способи
+//Прямо в HTML розмітці атрибутом on<event>
+//В файлі js elem.onclick = function(){}
+//addEventListener - він і найкращій, бо можна повісити декілька подій одночасно в попередніх так не вийде
+//
+//
+//
+
 "use strict"
 let input = document.createElement("input")
 input.setAttribute("type", "number")
