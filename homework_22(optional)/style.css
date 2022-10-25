@@ -1,0 +1,17 @@
+body{
+    margin:0;
+    padding: 0;
+}
+.active_elem{
+    background-color: black;
+}
+
+.container.white .point{
+    background-color: black;
+
+}
+
+.container.black .point.active_elem{
+    background-color: white;
+}
+
