@@ -1,0 +1,29 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.field {
+    display: grid;
+    grid-template-columns: repeat(8, 40px);
+    border: none;
+    width: auto;
+    height: 100%;
+    background-color: white;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+div {
+    display: flex;
+    height: 40px;
+    font-size: 24px;
+    background: aquamarine;
+    border: 1px solid black;
+    align-items: center;
+    justify-content: center;
+
+}
